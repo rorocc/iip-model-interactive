@@ -41,7 +41,7 @@
           <rect x="187.5" y="158.5" width="260" height="32" rx="7.5" fill="white"/>
           <rect x="187.5" y="158.5" width="260" height="32" rx="7.5" stroke="#DBDBDB"/>
           <text id="Reference Consonance" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="223" y="179.591">Reference Consonance</tspan></text>
-          <circle id="Ellipse 1" cx="207" cy="174.5" r="8" fill="#62B153"/>
+          <circle id="referenceEllipse" cx="207" cy="174.5" r="8"/>
         </g>
       </g>
       <g id="AcquisitionContainer">
@@ -76,7 +76,7 @@
           <rect x="85.5" y="428.5" width="182" height="32" rx="7.5" fill="white"/>
           <rect x="85.5" y="428.5" width="182" height="32" rx="7.5" stroke="#DBDBDB"/>
           <text id="Input Adequacy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="124" y="449.591">Input Adequacy</tspan></text>
-          <circle id="Ellipse 1_2" cx="105" cy="444.5" r="8" fill="#62B153"/>
+          <circle id="inputEllipse" cx="105" cy="444.5" r="8" fill="#62B153"/>
         </g>
       </g>
       <g id="Container-Effect">
@@ -118,7 +118,7 @@
           <rect x="687.5" y="428.5" width="206" height="32" rx="7.5" fill="white"/>
           <rect x="687.5" y="428.5" width="206" height="32" rx="7.5" stroke="#DBDBDB"/>
           <text id="Output Diagnosticity" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="723" y="449.591">Output Diagnosticity</tspan></text>
-          <circle id="Ellipse 1_3" cx="707" cy="444.5" r="8" fill="#62B153"/>
+          <circle id="outputEllipse" cx="707" cy="444.5" r="8" fill="#62B153"/>
         </g>
       </g>
       <path id="Arrow- Comparator-Decision" d="M752.5 139.5C751.119 139.5 750 140.619 750 142C750 143.381 751.119 144.5 752.5 144.5V139.5ZM782 142H784.5V139.5H782V142ZM780.232 337.268C781.209 338.244 782.791 338.244 783.768 337.268L799.678 321.358C800.654 320.382 800.654 318.799 799.678 317.822C798.701 316.846 797.118 316.846 796.142 317.822L782 331.964L767.858 317.822C766.882 316.846 765.299 316.846 764.322 317.822C763.346 318.799 763.346 320.382 764.322 321.358L780.232 337.268ZM752.5 144.5H782V139.5H752.5V144.5ZM779.5 142V335.5H784.5V142H779.5Z" fill="#B1B1B1"/>
@@ -143,7 +143,27 @@
 
 <script>
 export default {
-  name: "iip-model"
+  name: "iip-model",
+  props: {
+    inputAdequacy: Boolean,
+    referenceConsonance: Boolean,
+    outputDiagnosticity: Boolean
+  },
+  data() {
+    return {
+      inpAdeqColor: '#62B153',
+      refConsColor: '#62B153',
+      outDiagColor: '#62B153'
+    }
+  },
+  updated() {
+    if(this.inputAdequacy){this.inpAdeqColor = '#62B153'} else {this.inpAdeqColor = '#ed3752'}
+    if(this.referenceConsonance){this.refConsColor = '#62B153'} else {this.refConsColor = '#ed3752'}
+    if(this.outputDiagnosticity){this.outDiagColor = '#62B153'} else {this.outDiagColor = '#ed3752'}
+  },
+  methods(){
+
+  }
 }
 </script>
 
@@ -156,7 +176,19 @@ svg{
 
 .subloop:hover{
   cursor: pointer;
-  fill: #f1f1f1;;
+  fill: #f1f1f1;
+}
+
+#referenceEllipse{
+  fill: v-bind(refConsColor);
+}
+
+#inputEllipse{
+  fill: v-bind(inpAdeqColor);
+}
+
+#outputEllipse{
+  fill: v-bind(outDiagColor);
 }
 
 text{
