@@ -1,6 +1,9 @@
-# vue-project
+# IIP Model Simulation
 
 This template should help get you started developing with Vue 3 in Vite.
+
+## Pipelines Status
+[![Deploy static content to Pages](https://github.com/rorocc/iip-model-interactive/actions/workflows/deploy.yml/badge.svg)](https://github.com/rorocc/iip-model-interactive/actions/workflows/deploy.yml)
 
 ## Recommended IDE Setup
 
