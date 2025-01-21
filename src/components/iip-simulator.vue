@@ -1,80 +1,76 @@
 <template>
   <div class="container">
     <h1 class="text-2xl bold my-4">Integrated Information Processing Model</h1>
-    {{this.scenariosOfCategory}}
-    <label for="categories">Scenario Category</label>
-    <select class="py-2 px-2 mx-4 bg-gray-100 rounded-lg border"
-            v-model="this.selectedScenarioCategory"
-            v-on:change="this.findScenariosByCategory(this.selectedScenarioCategory)"
-            name="categories" id="categories">
-      <option v-for="category in this.scenarioCategories" :value="category.id">{{category.name }}</option>
-    </select>
-    <iip-model :input-adequacy="activeScenario.properties.inputAdequacy"
-               :reference-consonance="activeScenario.properties.referenceConsonance"
-               :output-diagnosticity="activeScenario.properties.outputDiagnosticity"  />
+    <div class="my-4">
+      <label for="categories">Select a scenario:</label>
+      <select class="py-2 px-2 mx-4 bg-gray-100 rounded-lg border"
+              v-model="this.activeScenario"
+              name="categories" id="categories">
+        <option disabled value="">Select a Scenario</option>
+        <option v-for="scenario in scenarios" :value="scenario">{{scenario.name}}</option>
+      </select>
+    </div>
 
-    <tooltip id="tooltip-comparator" headline="Comparator" text="The comparator continuously assesses the input against the reference value, triggering adjustments in the output function when discrepancies are detected." />
-    <tooltip id="tooltip-reference" headline="Reference Function" text="The reference function contains all processes and target values used to analyze the input information." />
-    <tooltip id="tooltip-input" headline="Input Function" text="The available machine data and human information represent the overall input for information processing, which means that anything that is not part of the human information or machine data is not processed." />
+    <div class="relative">
+      <div class="absolute w-full">
+        <iip-model :input-adequacy="activeScenario.properties.inputAdequacy"
+                   :reference-consonance="activeScenario.properties.referenceConsonance"
+                   :output-diagnosticity="activeScenario.properties.outputDiagnosticity"  />
+      </div>
+      <iip-model-input-adequacy v-show="isSubloopInputAdequacyVisible" class="absolute left-0"/>
+      <iip-model-output-diagnosticity v-show="isSubloopOutputDiagnosticityVisible" class="absolute right-0" />
+      <iip-model-reference-consonance v-show="isSubloopReferenceConsonanceVisible" class="absolute right-1/4"/>
+    </div>
+  </div>
+  <div id="tooltips-container">
+    <tooltip v-if="activeScenario.tooltips"  v-for="tooltip in activeScenario.tooltips"
+             class="hidden"
+             v-on.once="this.registerTooltipById(tooltip.tooltipId, tooltip.targetId)"
+             :id="tooltip.tooltipId"
+             :headline="tooltip.headline"
+             :text="tooltip.text"
+    />
+    <tooltip v-for="tooltip in tooltips"
+              class="hidden"
+             :id="tooltip.tooltipId"
+             :headline="tooltip.headline"
+             :text="tooltip.text"
+    />
   </div>
 </template>
 
 <script>
 import IipModel from "@/components/iip-model.vue";
 import Tooltip from "@/components/tooltip.vue";
+import IipModelInputAdequacy from "@/components/iip-model-input-adequacy.vue";
+import IipModelOutputDiagnosticity from "@/components/iip-model-output-diagnosticity.vue";
+import IipModelReferenceConsonance from "@/components/iip-model-reference-consonance.vue";
+import tooltips from "@/assets/tooltips.json";
+import scenarios from "@/assets/scenarios.json"
 export default {
   name: "iip-simulator",
-  components: {Tooltip, IipModel},
+  components: {IipModelReferenceConsonance, IipModelOutputDiagnosticity, IipModelInputAdequacy, Tooltip, IipModel},
   data () {
     return {
-      selectedScenarioCategory: 0,
-      scenariosOfCategory: [],
-      selectedScenario: 'demo',
-      scenarioCategories:[
-        {id:0, name: "AID"},
-        {id:1, name: "DemoCat"},
-        {id:2, name: "DemoDog"}
-      ],
-      scenarios: {
-        'demo' : {
-          categoryId: 0,
-          properties: {
-            inputAdequacy: true,
-            referenceConsonance: false,
-            outputDiagnosticity: false,
-          }
-        },
-        'demo2' : {
-          properties: {
-            categoryId: 1,
-            inputAdequacy: true,
-            referenceConsonance: true,
-            outputDiagnosticity: true,
-          }
-        },
-        'demo3' : {
-          properties: {
-            categoryId: 2,
-            inputAdequacy: true,
-            referenceConsonance: false,
-            outputDiagnosticity: true,
-          }
-        },
-      },
+      tooltips: tooltips,
+      isSubloopInputAdequacyVisible: false,
+      isSubloopOutputDiagnosticityVisible: false,
+      isSubloopReferenceConsonanceVisible: false,
+      scenarios: scenarios,
       activeScenario: JSON
     }
   },
   created() {
-    this.activeScenario = this.scenarios.demo2;
+    this.activeScenario = this.scenarios[0];
   },
   methods: {
-    findScenariosByCategory(category){
-      this.scenariosOfCategory = [];
-      for (let i in this.scenarios) {
-        if(this.scenarios[i].categoryId === category){
-          this.scenariosOfCategory.push(this.scenarios[i]);
-        }
-      }
+    registerTooltipById(tooltipId, targetId) {
+      document.getElementById(targetId).onmousemove = (evt) => {
+        this.showTooltip(tooltipId, evt)
+      };
+      document.getElementById(targetId).onmouseout = () => {
+        this.hideTooltip(tooltipId)
+      };
     },
     showTooltip(tooltipId, evt) {
       let tooltip = document.getElementById(tooltipId);
@@ -87,17 +83,19 @@ export default {
     }
   },
   mounted() {
-    // registering EFFECT tooltip events
-    document.getElementById("Container-Goal-Reference").onmousemove = (evt) => {this.showTooltip("tooltip-reference",evt)};
-    document.getElementById("Container-Goal-Reference").onmouseout = () => {this.hideTooltip("tooltip-reference")};
+    // registering all tooltips from /assets/tooltips.json
+    tooltips.forEach((tooltip) => {
+      this.registerTooltipById(tooltip.tooltipId, tooltip.targetId)
+    })
 
-    // registering COMPARATOR tooltip events
-    document.getElementById("Container-Comparator").onmousemove = (evt) => {this.showTooltip("tooltip-comparator",evt)};
-    document.getElementById("Container-Comparator").onmouseout = () => {this.hideTooltip("tooltip-comparator")};
+    document.getElementById("Container-InputAdequacy").onclick = () => {this.isSubloopInputAdequacyVisible = true}
+    document.getElementById("closeSubloopInputAdequacy").onclick = () => {this.isSubloopInputAdequacyVisible = false}
 
-    // registering COMPARATOR tooltip events
-    document.getElementById("Container-InputFunction").onmousemove = (evt) => {this.showTooltip("tooltip-input",evt)};
-    document.getElementById("Container-InputFunction").onmouseout = () => {this.hideTooltip("tooltip-input")};
+    document.getElementById("Container-OutputDiagnosticity").onclick = () => {this.isSubloopOutputDiagnosticityVisible = true}
+    document.getElementById("closeSubloopOutputDiagnosticity").onclick = () => {this.isSubloopOutputDiagnosticityVisible = false}
+
+    document.getElementById("Container-ReferenceConsonance").onclick = () => {this.isSubloopReferenceConsonanceVisible = true}
+    document.getElementById("closeSubloopReferenceConsonance").onclick = () => {this.isSubloopReferenceConsonanceVisible = false}
   }
 }
 </script>

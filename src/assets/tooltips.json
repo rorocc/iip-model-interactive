@@ -1,0 +1,44 @@
+[
+  {
+    "tooltipId": "tooltip-input",
+    "targetId": "Container-InputFunction",
+    "headline": "Input Function",
+    "text": "The available machine data and human information represent the overall input for information processing, which means that anything that is not part of the human information or machine data is not processed."
+  },
+  {
+    "tooltipId": "tooltip-inputAdequacy",
+    "targetId": "Container-InputAdequacy",
+    "headline": "Input Adequacy",
+    "text": "Input adequacy in integrated information processing exists when both entities have in total a sufficient amount of sufficiently correct information to process the task."
+  },
+  {
+    "tooltipId": "tooltip-comparator",
+    "targetId": "Container-Comparator",
+    "headline": "Comparator",
+    "text": "The comparator continuously assesses the input against the reference value, triggering adjustments in the output function when discrepancies are detected."
+  },
+  {
+    "tooltipId": "tooltip-reference",
+    "targetId": "Container-Goal-Reference",
+    "headline": "Reference Function",
+    "text": "The reference function contains all processes and target values used to analyze the input information."
+  },
+  {
+    "tooltipId": "tooltip-referenceConsonance",
+    "targetId": "Container-ReferenceConsonance",
+    "headline": "Reference Consonance",
+    "text": "Reference consonance in integrated information processing exists when the objectives and processes used to achieve those objectives by one entity do not contradict the objectives and processes of another entity."
+  },
+  {
+    "tooltipId": "tooltip-output",
+    "targetId": "Container-OutputFunction",
+    "headline": "Output Function",
+    "text": "The result of the output function thus represents a tested hypothesis that is considered to be the most accurate. Hypotheses can be, for example, statements about the state of health, but also which actions best support existing goals."
+  },
+  {
+    "tooltipId": "tooltip-outputDiagnosticity",
+    "targetId": "Container-OutputDiagnosticity",
+    "headline": "Output Diagnosticity",
+    "text": "Output diagnosticity in integrated information processing exists when the inference communicated by an entity has sufficient information value to change the relative probabilities of the possible outcomes of the information processing task."
+  }
+]

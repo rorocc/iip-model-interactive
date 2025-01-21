@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Default",
+    "properties": {
+      "inputAdequacy": true,
+      "referenceConsonance": true,
+      "outputDiagnosticity": true
+    },
+    "tooltips": []
+  },
+  {
+    "name": "test2 ftt",
+    "properties": {
+      "inputAdequacy": false,
+      "referenceConsonance": true,
+      "outputDiagnosticity": true
+    },
+    "tooltips": []
+  },
+  {
+    "name": "test3 tft",
+    "properties": {
+      "inputAdequacy": true,
+      "referenceConsonance": false,
+      "outputDiagnosticity": true
+    },
+    "tooltips": []
+  },
+  {
+    "name": "AID system calculates insulin dosis on average",
+    "properties": {
+      "inputAdequacy": true,
+      "referenceConsonance": false,
+      "outputDiagnosticity": true
+    },
+    "tooltips": []
+  },
+  {
+    "name": "Defect Sensor",
+    "properties": {
+      "inputAdequacy": false,
+      "referenceConsonance": false,
+      "outputDiagnosticity": true
+    },
+    "tooltips": [
+      {
+        "tooltipId": "tooltip-IA-inputFunction",
+        "targetId": "Container-IA-InputFunction",
+        "headline": "Input Function",
+        "text": "Receiving insufficient data."
+      }
+    ]
+  }
+]

@@ -3,14 +3,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <svg viewBox="0 0 955 619" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div>
+    <svg width="955" height="619" viewBox="0 0 955 619" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="iip-model">
         <g id="AnalysisContainer">
           <rect x="160.5" y="0.5" width="632" height="234" rx="7.5" fill="#FFF8E6"/>
           <rect x="160.5" y="0.5" width="632" height="234" rx="7.5" stroke="#FFDE88"/>
           <g id="Container-Comparator">
             <path id="Triangle-Comparator" d="M746.903 133.91C753.643 136.234 753.643 145.766 746.903 148.09L563.445 211.348C558.574 213.027 553.5 209.409 553.5 204.258L553.5 77.7425C553.5 72.5908 558.574 68.9728 563.445 70.6521L746.903 133.91Z" fill="white" stroke="#DBDBDB"/>
-            <text class="model-heading" id="Heading-Comparator" fill="black" xml:space="preserve" style="white-space: pre"><tspan x="578" y="147.545">Comparator</tspan></text>
+            <text id="Heading-Comparator" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="578" y="147.545">Comparator</tspan></text>
           </g>
           <text id="Heading-Analysis" fill="#DCC091" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0.05em"><tspan x="176" y="47.1364">ANALYSIS</tspan></text>
           <g id="Container-Goal-Reference">
@@ -19,9 +20,6 @@
               <g id="Container-HeadingGoalReference">
                 <rect width="261" height="38" transform="translate(187 63)" fill="white"/>
                 <text id="Goal / Reference" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="246" y="88.5455">Goal / Reference</tspan></text>
-                <g id="Frame">
-                  <path id="Vector" d="M424.667 80V78.6667H426.667V76H428V78.6667H430V80H424.667ZM426.667 88V81.3333H428V88H426.667ZM420 88V85.3333H418V84H423.333V85.3333H421.333V88H420ZM420 82.6667V76H421.333V82.6667H420Z" fill="black"/>
-                </g>
               </g>
               <g id="Container-HumanMachine">
                 <g id="Container-HumanCognitiveFrame">
@@ -37,7 +35,7 @@
             <rect x="187.5" y="63.5" width="260" height="87" rx="7.5" stroke="#DBDBDB"/>
           </g>
           <path id="Arrow-Goal-Comparator" d="M555.768 115.768C556.744 114.791 556.744 113.209 555.768 112.232L539.858 96.3223C538.882 95.346 537.299 95.346 536.322 96.3223C535.346 97.2986 535.346 98.8815 536.322 99.8578L550.464 114L536.322 128.142C535.346 129.118 535.346 130.701 536.322 131.678C537.299 132.654 538.882 132.654 539.858 131.678L555.768 115.768ZM448.5 116.5L554 116.5L554 111.5L448.5 111.5L448.5 116.5Z" fill="#B1B1B1"/>
-          <g id="Container-ReferenceConsonance" class="subloop">
+          <g id="Container-ReferenceConsonance">
             <rect x="187.5" y="158.5" width="260" height="32" rx="7.5" fill="white"/>
             <rect x="187.5" y="158.5" width="260" height="32" rx="7.5" stroke="#DBDBDB"/>
             <text id="Reference Consonance" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="223" y="179.591">Reference Consonance</tspan></text>
@@ -53,10 +51,7 @@
               <rect x="85" y="336" width="183" height="88" rx="8" fill="white"/>
               <g id="Container-HeadingInput">
                 <rect width="183" height="38" transform="translate(85 336)" fill="white"/>
-                <text id="Input Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="101.5" y="361.545">Input Function</tspan></text>
-                <g id="Frame_2">
-                  <path id="Vector_2" d="M244.167 353V351.667H246.167V349H247.5V351.667H249.5V353H244.167ZM246.167 361V354.333H247.5V361H246.167ZM239.5 361V358.333H237.5V357H242.833V358.333H240.833V361H239.5ZM239.5 355.667V349H240.833V355.667H239.5Z" fill="black"/>
-                </g>
+                <text id="Input Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="114.5" y="361.545">Input Function</tspan></text>
               </g>
               <g id="Container-HumanMachine_2">
                 <rect width="183" height="50" transform="translate(85 374)" fill="white"/>
@@ -72,11 +67,11 @@
             </g>
             <rect x="85.5" y="336.5" width="182" height="87" rx="7.5" stroke="#DBDBDB"/>
           </g>
-          <g id="Frame 4" class="subloop">
+          <g id="Container-InputAdequacy">
             <rect x="85.5" y="428.5" width="182" height="32" rx="7.5" fill="white"/>
             <rect x="85.5" y="428.5" width="182" height="32" rx="7.5" stroke="#DBDBDB"/>
             <text id="Input Adequacy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="124" y="449.591">Input Adequacy</tspan></text>
-            <circle id="inputEllipse" cx="105" cy="444.5" r="8" fill="#62B153"/>
+            <circle id="inputEllipse" cx="105" cy="444.5" r="8"/>
           </g>
         </g>
         <g id="Container-Effect">
@@ -90,16 +85,13 @@
         <g id="DecisionContainer">
           <rect x="602.5" y="299.5" width="352" height="223" rx="7.5" fill="#F9F4FA"/>
           <rect x="602.5" y="299.5" width="352" height="223" rx="7.5" stroke="#E1CFEF"/>
-          <text class="model-display" id="Heading-DECISION" fill="#CC95D6" xml:space="preserve" style="white-space: pre"><tspan x="776" y="505.136">DECISION</tspan></text>
+          <text id="Heading-DECISION" fill="#CC95D6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0.05em"><tspan x="776" y="505.136">DECISION</tspan></text>
           <g id="Container-OutputFunction">
             <g clip-path="url(#clip2_33_2)">
               <rect x="687" y="336" width="207" height="88" rx="8" fill="white"/>
               <g id="Container-HeadingOutput">
                 <rect width="207" height="38" transform="translate(687 336)" fill="white"/>
                 <text id="Output Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="721" y="361.545">Output Function</tspan></text>
-                <g id="Frame_3">
-                  <path id="Vector_3" d="M878.667 354V352.667H880.667V350H882V352.667H884V354H878.667ZM880.667 362V355.333H882V362H880.667ZM874 362V359.333H872V358H877.333V359.333H875.333V362H874ZM874 356.667V350H875.333V356.667H874Z" fill="black"/>
-                </g>
               </g>
               <g id="Container-HumanMachine_3">
                 <g id="Container-HumanHypo">
@@ -114,11 +106,11 @@
             </g>
             <rect x="687.5" y="336.5" width="206" height="87" rx="7.5" stroke="#DBDBDB"/>
           </g>
-          <g id="Frame 4_2" class="subloop">
+          <g id="Container-OutputDiagnosticity">
             <rect x="687.5" y="428.5" width="206" height="32" rx="7.5" fill="white"/>
             <rect x="687.5" y="428.5" width="206" height="32" rx="7.5" stroke="#DBDBDB"/>
             <text id="Output Diagnosticity" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="723" y="449.591">Output Diagnosticity</tspan></text>
-            <circle id="outputEllipse" cx="707" cy="444.5" r="8" fill="#62B153"/>
+            <circle id="outputEllipse" cx="707" cy="444.5" r="8" />
           </g>
         </g>
         <path id="Arrow- Comparator-Decision" d="M752.5 139.5C751.119 139.5 750 140.619 750 142C750 143.381 751.119 144.5 752.5 144.5V139.5ZM782 142H784.5V139.5H782V142ZM780.232 337.268C781.209 338.244 782.791 338.244 783.768 337.268L799.678 321.358C800.654 320.382 800.654 318.799 799.678 317.822C798.701 316.846 797.118 316.846 796.142 317.822L782 331.964L767.858 317.822C766.882 316.846 765.299 316.846 764.322 317.822C763.346 318.799 763.346 320.382 764.322 321.358L780.232 337.268ZM752.5 144.5H782V139.5H752.5V144.5ZM779.5 142V335.5H784.5V142H779.5Z" fill="#B1B1B1"/>
@@ -139,6 +131,7 @@
         </clipPath>
       </defs>
     </svg>
+  </div>
 </template>
 
 <script>
@@ -160,13 +153,21 @@ export default {
     }
   },
   updated() {
+    // remove the inline fill of #inputEllpise, #referenceEllipse, and #outputEllipse
+    // Additionally, add .subloop class to their container
     if(this.inputAdequacy){this.inpAdeqColor = '#62B153'} else {this.inpAdeqColor = '#ed3752'}
+    document.getElementById("inputEllipse").style.fill = this.inpAdeqColor;
     if(this.referenceConsonance){this.refConsColor = '#62B153'} else {this.refConsColor = '#ed3752'}
+    document.getElementById("referenceEllipse").style.fill = this.refConsColor;
     if(this.outputDiagnosticity){this.outDiagColor = '#62B153'} else {this.outDiagColor = '#ed3752'}
+    document.getElementById("outputEllipse").style.fill = this.outDiagColor;
   },
   methods: {
   },
   mounted() {
+    document.getElementById("Container-InputAdequacy").classList.add("subloop");
+    document.getElementById("Container-ReferenceConsonance").classList.add("subloop");
+    document.getElementById("Container-OutputDiagnosticity").classList.add("subloop");
   }
 }
 </script>
