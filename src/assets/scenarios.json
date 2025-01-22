@@ -9,11 +9,11 @@
     "tooltips": []
   },
   {
-    "name": "test2 ftt",
+    "name": "test2 fff",
     "properties": {
       "inputAdequacy": false,
-      "referenceConsonance": true,
-      "outputDiagnosticity": true
+      "referenceConsonance": false,
+      "outputDiagnosticity": false
     },
     "tooltips": []
   },
@@ -27,26 +27,45 @@
     "tooltips": []
   },
   {
-    "name": "AID system calculates insulin dosis on average",
-    "properties": {
-      "inputAdequacy": true,
-      "referenceConsonance": false,
-      "outputDiagnosticity": true
-    },
-    "tooltips": []
-  },
-  {
-    "name": "Defect Sensor",
+    "name": "AID system has no information about meals",
     "properties": {
       "inputAdequacy": false,
-      "referenceConsonance": false,
+      "referenceConsonance": true,
+      "outputDiagnosticity": true
+    },
+    "tooltips": [
+      {
+        "tooltipId": "tooltip-missing-meal-info-machine",
+        "targetId": "Container-MachineData",
+        "headline": "",
+        "text": "Missing information about the amount of carbohydrates"
+      },
+      {
+        "tooltipId": "tooltip-missing-meal-info-human",
+        "targetId": "Container-HumanInfo",
+        "headline": "",
+        "text": "Human knows about their own meal intake"
+      },
+      {
+        "tooltipId": "tooltip-missing-meal-actions",
+        "targetId": "Container-IA-OutputFunction",
+        "headline": "",
+        "text": "Correct, delete or extend machine data"
+      }
+    ]
+  },
+  {
+    "name": "Human is not aware of insulin level",
+    "properties": {
+      "inputAdequacy": false,
+      "referenceConsonance": true,
       "outputDiagnosticity": true
     },
     "tooltips": [
       {
         "tooltipId": "tooltip-IA-inputFunction",
         "targetId": "Container-IA-InputFunction",
-        "headline": "Input Function",
+        "headline": "",
         "text": "Receiving insufficient data."
       }
     ]

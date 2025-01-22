@@ -1,7 +1,7 @@
 [
   {
     "tooltipId": "tooltip-input",
-    "targetId": "Container-InputFunction",
+    "targetId": "Container-HeadingInput",
     "headline": "Input Function",
     "text": "The available machine data and human information represent the overall input for information processing, which means that anything that is not part of the human information or machine data is not processed."
   },
@@ -19,7 +19,7 @@
   },
   {
     "tooltipId": "tooltip-reference",
-    "targetId": "Container-Goal-Reference",
+    "targetId": "Container-HeadingGoalReference",
     "headline": "Reference Function",
     "text": "The reference function contains all processes and target values used to analyze the input information."
   },
@@ -31,7 +31,7 @@
   },
   {
     "tooltipId": "tooltip-output",
-    "targetId": "Container-OutputFunction",
+    "targetId": "Container-HeadingOutput",
     "headline": "Output Function",
     "text": "The result of the output function thus represents a tested hypothesis that is considered to be the most accurate. Hypotheses can be, for example, statements about the state of health, but also which actions best support existing goals."
   },

@@ -16,7 +16,7 @@
       </svg>
     </div>
     <svg width="809" height="646" viewBox="0 0 809 646" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="iip-model">
+      <g id="iip-model-input-adequacy">
         <g id="Container-IA-Effect">
           <rect x="301.5" y="265.5" width="182" height="107" fill="#F0F0F0"/>
           <rect x="301.5" y="265.5" width="182" height="107" stroke="#DBDBDB"/>
@@ -35,13 +35,13 @@
         <g id="Container-IA-InputFunction">
           <g clip-path="url(#clip0_56_4)">
             <rect y="281" width="183" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingInput">
+            <g id="Container-IA-HeadingInput">
               <rect width="183" height="38" transform="translate(0 281)" fill="white"/>
               <text id="Input Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="29.5" y="306.545">Input Function</tspan></text>
             </g>
-            <g id="Container-HumanMachine">
+            <g id="Container-IA-IF-Text">
               <rect width="183" height="50" transform="translate(0 319)" fill="white"/>
-              <g id="Container-HumanInfo">
+              <g id="Container-Perceived-LevelIA">
                 <rect width="183" height="50" transform="translate(0 319)" fill="#BAE7FF"/>
                 <text id="Perceived Level of Input Adequacy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="30.6807" y="340.591">Perceived Level of&#10;</tspan><tspan x="39.4717" y="357.591">Input Adequacy</tspan></text>
               </g>
@@ -56,12 +56,12 @@
         <g id="Container-IA-Goal-Reference">
           <g clip-path="url(#clip1_56_4)">
             <rect x="99" y="31" width="261" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingGoalReference">
+            <g id="Container-IA-HeadingGoalReference">
               <rect width="261" height="38" transform="translate(99 31)" fill="white"/>
               <text id="Goal / Reference" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="158" y="56.5455">Goal / Reference</tspan></text>
             </g>
-            <g id="Container-HumanMachine_2">
-              <g id="Container-HumanCognitiveFrame">
+            <g id="Container-IA-GR-Text">
+              <g id="Container-Preferred-LevelIA">
                 <rect width="261" height="50" transform="translate(99 69)" fill="#BAE7FF"/>
                 <text id="Preferred Level of Input Adequacy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="170.513" y="90.5909">Preferred Level of&#10;</tspan><tspan x="177.472" y="107.591">Input Adequacy</tspan></text>
               </g>
@@ -73,12 +73,12 @@
         <g id="Container-IA-OutputFunction">
           <g clip-path="url(#clip2_56_4)">
             <rect x="602" y="281" width="207" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingOutput">
+            <g id="Container-IA-HeadingOutput">
               <rect width="207" height="38" transform="translate(602 281)" fill="white"/>
               <text id="Output Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="636" y="306.545">Output Function</tspan></text>
             </g>
-            <g id="Container-HumanMachine_3">
-              <g id="Container-HumanHypo">
+            <g id="Container-IA-OF-Text">
+              <g id="Container-Actions-LevelIA">
                 <rect width="207" height="50" transform="translate(602 319)" fill="#BAE7FF"/>
                 <text id="Actions to change Level of Input Adequacy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="615.689" y="340.591">Actions to change Level of &#10;</tspan><tspan x="653.472" y="357.591">Input Adequacy</tspan></text>
               </g>

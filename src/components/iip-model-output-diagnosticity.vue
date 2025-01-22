@@ -16,13 +16,13 @@
       </svg>
     </div>
     <svg width="809" height="646" viewBox="0 0 809 646" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="iip-model">
-        <g id="Container-Effect">
+      <g id="iip-model-output-diagnosticity">
+        <g id="Container-OD-Effect">
           <rect x="301.5" y="265.5" width="182" height="107" fill="#F0F0F0"/>
           <rect x="301.5" y="265.5" width="182" height="107" stroke="#DBDBDB"/>
           <text id="Effect on environment" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="352.861" y="314.545">Effect on&#10;</tspan><tspan x="336.716" y="336.545">environment</tspan></text>
         </g>
-        <g id="Container-Disturbance">
+        <g id="Container-OD-Disturbance">
           <rect x="301.5" y="478.5" width="182" height="85" fill="#F0F0F0"/>
           <rect x="301.5" y="478.5" width="182" height="85" stroke="#DBDBDB"/>
           <text id="Disturbance" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="bold" letter-spacing="0em"><tspan x="338.465" y="527.545">Disturbance</tspan></text>
@@ -35,13 +35,13 @@
         <g id="Container-InputFunction">
           <g clip-path="url(#clip0_57_145)">
             <rect y="281" width="183" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingInput">
+            <g id="Container-OD-HeadingInput">
               <rect width="183" height="38" transform="translate(0 281)" fill="white"/>
               <text id="Input Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="29.5" y="306.545">Input Function</tspan></text>
             </g>
-            <g id="Container-HumanMachine">
+            <g id="Container-OD-IF-Text">
               <rect width="183" height="50" transform="translate(0 319)" fill="white"/>
-              <g id="Container-HumanInfo">
+              <g id="Container-Perceived-LevelOD">
                 <rect width="183" height="50" transform="translate(0 319)" fill="#BAE7FF"/>
                 <text id="Perceived Level of Output Diagnosticity" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="30.6807" y="340.591">Perceived Level of&#10;</tspan><tspan x="23.667" y="357.591">Output Diagnosticity</tspan></text>
               </g>
@@ -49,19 +49,19 @@
           </g>
           <rect x="0.5" y="281.5" width="182" height="87" rx="7.5" stroke="#DBDBDB"/>
         </g>
-        <g id="Container-Comparator">
-          <path id="Triangle-Comparator" d="M661.903 93.0904L478.445 156.348C473.574 158.027 468.5 154.409 468.5 149.258L468.5 22.7425C468.5 17.5908 473.574 13.9728 478.445 15.6521L661.903 78.9097C668.643 81.2338 668.643 90.7663 661.903 93.0904Z" fill="white" stroke="#DBDBDB"/>
+        <g id="Container-OD-Comparator">
+          <path id="Triangle-Comparator" d="M661.903 78.9097C668.643 81.2338 668.643 90.7663 661.903 93.0904L478.445 156.348C473.574 158.027 468.5 154.409 468.5 149.258L468.5 22.7425C468.5 17.5908 473.574 13.9728 478.445 15.6521L661.903 78.9097Z" fill="white" stroke="#DBDBDB"/>
           <text id="Heading-Comparator" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="493" y="92.5455">Comparator</tspan></text>
         </g>
         <g id="Container-Goal-Reference">
           <g clip-path="url(#clip1_57_145)">
             <rect x="99" y="31" width="261" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingGoalReference">
+            <g id="Container-OD-HeadingGoalReference">
               <rect width="261" height="38" transform="translate(99 31)" fill="white"/>
               <text id="Goal / Reference" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="158" y="56.5455">Goal / Reference</tspan></text>
             </g>
-            <g id="Container-HumanMachine_2">
-              <g id="Container-HumanCognitiveFrame">
+            <g id="Container-OD-GR-Text">
+              <g id="Container-Preferred-LevelOD">
                 <rect width="261" height="50" transform="translate(99 69)" fill="#BAE7FF"/>
                 <text id="Preferred Level of Output Diagnosticity" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="170.513" y="90.5909">Preferred Level of&#10;</tspan><tspan x="161.667" y="107.591">Output Diagnosticity</tspan></text>
               </g>
@@ -73,12 +73,12 @@
         <g id="Container-OutputFunction">
           <g clip-path="url(#clip2_57_145)">
             <rect x="602" y="281" width="207" height="88" rx="8" fill="white"/>
-            <g id="Container-HeadingOutput">
+            <g id="Container-OD-HeadingOutput">
               <rect width="207" height="38" transform="translate(602 281)" fill="white"/>
               <text id="Output Function" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18" font-weight="500" letter-spacing="0em"><tspan x="636" y="306.545">Output Function</tspan></text>
             </g>
-            <g id="Container-HumanMachine_3">
-              <g id="Container-HumanHypo">
+            <g id="Container-OD-OF-Text">
+              <g id="Container-Actions-LevelOD">
                 <rect width="207" height="50" transform="translate(602 319)" fill="#BAE7FF"/>
                 <text id="Actions to change Level of Output Diagnosticity" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="615.689" y="340.591">Actions to change Level of &#10;</tspan><tspan x="637.667" y="357.591">Output Diagnosticity</tspan></text>
               </g>
@@ -88,8 +88,8 @@
         </g>
         <text id="Heading-Acquisition" fill="#CC95D6" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="32" font-weight="bold" letter-spacing="0.05em"><tspan x="50" y="638.136">OUTPUT DIAGNOSTICITY</tspan></text>
         <g id="Frame 12">
-          <path id="Ellipse 1" d="M39.0916 627C40.1456 627 41.0105 626.143 40.8989 625.095C40.5675 621.98 39.4273 618.994 37.5768 616.44C35.3516 613.368 32.2131 611.078 28.6092 609.896C25.0053 608.714 21.1201 608.701 17.5081 609.858C14.5042 610.821 11.817 612.552 9.70541 614.865C8.99488 615.644 9.18436 616.846 10.0336 617.47V617.47C10.8829 618.095 12.069 617.901 12.8014 617.143C14.4206 615.468 16.4351 614.21 18.6726 613.493C21.5187 612.581 24.5801 612.592 27.4198 613.523C30.2596 614.454 32.7326 616.259 34.4859 618.679C35.8643 620.582 36.7425 622.788 37.0551 625.097C37.1965 626.142 38.0377 627 39.0916 627V627Z" fill="#CC95D6"/>
-          <path id="Ellipse 2" d="M6.90836 627C5.8544 627 4.98953 627.857 5.10106 628.905C5.43251 632.02 6.57268 635.006 8.42321 637.56C10.6484 640.632 13.7869 642.922 17.3908 644.104C20.9947 645.286 24.8799 645.299 28.4919 644.142C31.4958 643.179 34.183 641.448 36.2946 639.135C37.0051 638.356 36.8156 637.154 35.9664 636.53V636.53C35.1171 635.905 33.931 636.099 33.1986 636.857C31.5794 638.532 29.5649 639.79 27.3274 640.507C24.4813 641.419 21.4199 641.408 18.5802 640.477C15.7404 639.546 13.2674 637.741 11.5141 635.321C10.1357 633.418 9.25747 631.212 8.94491 628.903C8.80352 627.858 7.96232 627 6.90836 627V627Z" fill="#CC95D6"/>
+          <path id="Ellipse 1" d="M39.0916 627C40.1456 627 41.0105 626.143 40.8989 625.095C40.5675 621.98 39.4273 618.994 37.5768 616.44C35.3516 613.368 32.2131 611.078 28.6092 609.896C25.0053 608.714 21.1201 608.701 17.5081 609.858C14.5042 610.821 11.817 612.552 9.70541 614.865C8.99488 615.644 9.18436 616.846 10.0336 617.47C10.8829 618.095 12.069 617.901 12.8014 617.143C14.4206 615.468 16.4351 614.21 18.6726 613.493C21.5187 612.581 24.5801 612.592 27.4198 613.523C30.2596 614.454 32.7326 616.259 34.4859 618.679C35.8643 620.582 36.7425 622.788 37.0551 625.097C37.1965 626.142 38.0377 627 39.0916 627Z" fill="#CC95D6"/>
+          <path id="Ellipse 2" d="M6.90836 627C5.8544 627 4.98953 627.857 5.10106 628.905C5.43251 632.02 6.57268 635.006 8.42321 637.56C10.6484 640.632 13.7869 642.922 17.3908 644.104C20.9947 645.286 24.8799 645.299 28.4919 644.142C31.4958 643.179 34.183 641.448 36.2946 639.135C37.0051 638.356 36.8156 637.154 35.9664 636.53C35.1171 635.905 33.931 636.099 33.1986 636.857C31.5794 638.532 29.5649 639.79 27.3274 640.507C24.4813 641.419 21.4199 641.408 18.5802 640.477C15.7404 639.546 13.2674 637.741 11.5141 635.321C10.1357 633.418 9.25747 631.212 8.94491 628.903C8.80353 627.858 7.96232 627 6.90836 627Z" fill="#CC95D6"/>
           <path id="Polygon 3" d="M39.8492 633.634C39.458 634.263 38.542 634.263 38.1508 633.634L33.8879 626.778C33.4737 626.112 33.9527 625.25 34.7371 625.25L43.2629 625.25C44.0473 625.25 44.5263 626.112 44.1121 626.778L39.8492 633.634Z" fill="#CC95D6"/>
           <path id="Polygon 4" d="M6.15077 620.366C6.54205 619.737 7.45795 619.737 7.84923 620.366L12.1121 627.222C12.5263 627.888 12.0473 628.75 11.2629 628.75L2.73712 628.75C1.95273 628.75 1.47372 627.888 1.88789 627.222L6.15077 620.366Z" fill="#CC95D6"/>
         </g>

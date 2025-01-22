@@ -2,7 +2,7 @@
   <div class="absolute">
     <div class="tt top">
       <h3 class="font-bold" v-if="headline">{{ headline }}</h3>
-      <hr class="mb-2 mt-1" />
+      <hr class="mb-2 mt-1" v-if="headline" />
       <p class="text-sm" v-if="text">{{ text }}</p>
       <i></i>
     </div>
